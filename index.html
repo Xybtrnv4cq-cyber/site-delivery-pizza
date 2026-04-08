@@ -8,104 +8,67 @@
 <style>
 body {
   margin: 0;
-  font-family: 'Arial';
-  background: #0f0f0f;
+  font-family: Arial;
+  background: #0b1f3a;
   color: white;
 }
 
 /* NAVBAR */
 nav {
-  background: black;
+  background: #001f5c;
   padding: 15px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 nav h2 {
-  color: #ff3c00;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-  margin-left: 15px;
+  color: #ff0000;
 }
 
 /* HEADER */
 header {
-  background: url('https://images.unsplash.com/photo-1513104890138-7c749659a591') center/cover;
-  padding: 120px 20px;
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+  url('https://images.unsplash.com/photo-1513104890138-7c749659a591') center/cover;
+  padding: 100px 20px;
   text-align: center;
 }
 
-header h1 {
-  font-size: 50px;
-  color: #ff3c00;
-}
-
 .btn {
-  background: #ff3c00;
-  padding: 15px 25px;
+  background: red;
+  padding: 15px;
+  margin: 10px;
+  display: inline-block;
   color: white;
   text-decoration: none;
-  font-size: 18px;
   border-radius: 5px;
-  display: inline-block;
-  margin: 10px;
-  transition: 0.3s;
-}
-
-.btn:hover {
-  background: #ff5e2e;
 }
 
 /* SECTIONS */
 section {
-  padding: 60px 20px;
-  text-align: center;
+  padding: 40px 20px;
 }
 
 .menu {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
 }
 
-.pizza {
-  background: #1c1c1c;
-  margin: 15px;
-  padding: 20px;
-  border-radius: 10px;
-  width: 260px;
-  transition: 0.3s;
-}
-
-.pizza:hover {
-  transform: scale(1.05);
-}
-
-.pizza img {
-  width: 100%;
-  border-radius: 10px;
-}
-
-/* AVIS */
-.reviews {
-  max-width: 600px;
-  margin: auto;
-}
-
-.review {
-  background: #1c1c1c;
-  padding: 15px;
+.item {
+  background: white;
+  color: black;
   margin: 10px;
-  border-radius: 8px;
+  padding: 15px;
+  border-radius: 10px;
+  width: 250px;
+}
+
+h2 {
+  color: #ff0000;
 }
 
 /* FOOTER */
 footer {
-  background: black;
+  background: #001f5c;
   padding: 20px;
   text-align: center;
 }
@@ -114,92 +77,66 @@ footer {
 
 <body>
 
-<!-- NAVBAR -->
 <nav>
   <h2>🍕 Delivery Pizza</h2>
-  <div>
-    <a href="#menu">Menu</a>
-    <a href="#avis">Avis</a>
-    <a href="#contact">Contact</a>
-  </div>
 </nav>
 
-<!-- HEADER -->
 <header>
   <h1>Les meilleures pizzas à Maubeuge</h1>
-  <p>Livraison rapide • Produits frais • Qualité artisanale</p>
-
-  <!-- TELEPHONE -->
   <a class="btn" href="tel:0327595883">📞 03 27 59 58 83</a>
-
-  <a class="btn" href="#menu">Voir le menu</a>
 </header>
 
-<!-- MENU -->
-<section id="menu">
-  <h2>🍕 Notre Menu</h2>
+<!-- MENU COMPLET -->
+<section>
+<h2>🍕 LES CLASSIQUES</h2>
+<div class="menu">
 
-  <div class="menu">
+<div class="item"><h3>Margherita</h3><p>8,50€</p></div>
+<div class="item"><h3>Jambon</h3><p>11,50€</p></div>
+<div class="item"><h3>4 fromages</h3><p>13,50€</p></div>
+<div class="item"><h3>5 fromages</h3><p>13,00€</p></div>
+<div class="item"><h3>Reine</h3><p>12,50€</p></div>
+<div class="item"><h3>4 saisons</h3><p>13,50€</p></div>
+<div class="item"><h3>Orientale</h3><p>14,00€</p></div>
+<div class="item"><h3>Bolognaise</h3><p>13,50€</p></div>
 
-    <div class="pizza">
-      <img src="https://images.unsplash.com/photo-1601924582975-7e06e6d8b0b3">
-      <h3>Margherita</h3>
-      <p>Tomate, mozzarella</p>
-      <p>8€</p>
-    </div>
-
-    <div class="pizza">
-      <img src="https://images.unsplash.com/photo-1594007654729-407eedc4be65">
-      <h3>Reine</h3>
-      <p>Jambon, champignons</p>
-      <p>10€</p>
-    </div>
-
-    <div class="pizza">
-      <img src="https://images.unsplash.com/photo-1548365328-9f547fb0953a">
-      <h3>4 Fromages</h3>
-      <p>Fromages variés</p>
-      <p>11€</p>
-    </div>
-
-    <div class="pizza">
-      <img src="https://images.unsplash.com/photo-1603079848012-7f8d0d4f4c56">
-      <h3>Pepperoni</h3>
-      <p>Tomate, pepperoni</p>
-      <p>12€</p>
-    </div>
-
-    <div class="pizza">
-      <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002">
-      <h3>Végétarienne</h3>
-      <p>Légumes grillés</p>
-      <p>11€</p>
-    </div>
-
-  </div>
+</div>
 </section>
 
-<!-- AVIS CLIENTS -->
-<section id="avis">
-  <h2>⭐ Avis clients</h2>
+<section>
+<h2>🍝 LES PÂTES</h2>
+<div class="menu">
 
-  <div class="reviews">
-    <div class="review">🔥 "Meilleure pizza de Maubeuge !" - Karim</div>
-    <div class="review">🍕 "Livraison rapide et délicieuse" - Sarah</div>
-    <div class="review">💯 "Je recommande à 100%" - Lucas</div>
-  </div>
+<div class="item"><h3>Spaghetti bolognaise</h3><p>12,00€</p></div>
+<div class="item"><h3>Spaghetti carbonara</h3><p>12,00€</p></div>
+<div class="item"><h3>Penne bolognaise</h3><p>12,50€</p></div>
+<div class="item"><h3>Penne napolitaine</h3><p>11,50€</p></div>
+<div class="item"><h3>Gratin penne</h3><p>14,50€</p></div>
+
+</div>
+</section>
+
+<!-- HORAIRES -->
+<section>
+<h2>🕒 Horaires</h2>
+<p>Mercredi : 11:30–14:00 / 17:45–22:00</p>
+<p>Jeudi : 11:30–14:00 / 17:45–22:00</p>
+<p>Vendredi : 11:30–22:30</p>
+<p>Samedi : 11:30–22:30</p>
+<p>Dimanche : 17:45–22:00</p>
+<p>Lundi : 11:30–14:00 / 17:45–22:00</p>
+<p>Mardi : 11:30–14:00 / 17:45–22:00</p>
 </section>
 
 <!-- CONTACT -->
-<section id="contact">
-  <h2>📍 Contact</h2>
-  <p>Maubeuge</p>
-  <p>📞 03 27 59 58 83</p>
+<section>
+<h2>📍 Contact</h2>
+<p>117 route de Mons, 59600 Maubeuge</p>
+<p>📞 03 27 59 58 83</p>
 </section>
 
-<!-- FOOTER -->
 <footer>
-  <p>© Delivery Pizza 2026 - Tous droits réservés</p>
+<p>© Delivery Pizza Maubeuge</p>
 </footer>
 
 </body>
